@@ -1,4 +1,6 @@
-﻿
+﻿@model CursoMVC20191.Models.User
+
+
 @{
     ViewData["Title"] = "Index";
     string Nombre = "Alejandro";
@@ -11,4 +13,10 @@
 {
     <b>@i </b>
 }
+
+<div>  
+    @Model.Name
+    <br /> 
+    @Model.Email
+</div>
 

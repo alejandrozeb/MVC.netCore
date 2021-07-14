@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CursoMVC20191.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,10 @@ namespace CursoMVC20191.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            User user = new User();
+            user.Name = "juan";
+            user.Email = "correo@coreo.com";
+            return View(user);
         }
     }
 }
